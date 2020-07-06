@@ -1,0 +1,22 @@
+{
+  "name": "eventscape",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass Public/sass/main.scss Public/css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sAVItar02/EventScape.git"
+  },
+  "author": "Rohit | Aviral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sAVItar02/EventScape/issues"
+  },
+  "homepage": "https://github.com/sAVItar02/EventScape#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
