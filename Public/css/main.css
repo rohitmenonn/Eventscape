@@ -111,6 +111,7 @@ body {
         position: relative;
         z-index: 90rem; } }
   .nav-link {
+    position: relative;
     width: fit-content;
     padding: 1rem 1rem;
     margin: 0 4rem;
@@ -118,6 +119,9 @@ body {
     list-style: none;
     font-size: 1.8rem;
     cursor: pointer; }
+    .nav-link a {
+      text-decoration: none;
+      color: #000; }
     @media only screen and (max-width: 56.25rem) {
       .nav-link:not(:last-child) {
         margin-bottom: 1rem; } }
@@ -147,3 +151,6 @@ body {
       top: -0.8rem; }
     .nav-toggler-icon::after {
       top: 0.8rem; }
+
+.hide {
+  display: none; }
