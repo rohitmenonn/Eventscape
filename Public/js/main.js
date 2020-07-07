@@ -21,4 +21,13 @@ function myFunction(x) {
 			var $nav = $(".nav");
 			$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
 		});
-	});
+  });
+  
+  // FILTER SHOW 
+
+  $('.filter-options').hide();
+
+  $('.filter').on('click', (e) => {
+    e.preventDefault();
+    $('.filter-options').slideToggle();    
+  })
