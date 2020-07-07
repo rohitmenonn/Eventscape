@@ -15,21 +15,8 @@ body {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  overflow-x: hidden; }
-
-.wave-1, .wave-2, .wave-3, .wave-4 {
-  height: 75px;
-  width: 100vw; }
-
-.wave-1 {
-  position: absolute;
-  background-image: url("/Public/imgs/wave.png");
-  background-size: 1000px 100px;
-  animation: animate 30s linear infinite;
-  animation-delay: 0s;
-  z-index: 1000;
-  bottom: 200px;
-  left: 0; }
+  overflow-x: hidden;
+  position: relative; }
 
 @keyframes animate {
   0% {
@@ -37,32 +24,11 @@ body {
   100% {
     background-position-x: 1000px; } }
 
-.wave-2 {
-  position: absolute;
-  background-image: url("/Public/imgs/wave-light.png");
-  background-size: 1000px 100px;
-  animation: animate2 15s linear infinite;
-  animation-delay: -5s;
-  z-index: 999;
-  bottom: 205px;
-  left: 0;
-  opacity: 0.8; }
-
 @keyframes animate2 {
   0% {
     background-position-x: 0px; }
   100% {
     background-position-x: -1000px; } }
-
-.wave-3 {
-  position: absolute;
-  background-image: url("/Public/imgs/wave-dark.png");
-  background-size: 1000px 100px;
-  animation: animate3 5s linear infinite;
-  animation-delay: -2s;
-  z-index: 998;
-  bottom: 210px;
-  left: 0; }
 
 @keyframes animate3 {
   0% {
@@ -70,9 +36,106 @@ body {
   100% {
     background-position-x: -1000px; } }
 
+.wave-1, .wave-2, .wave-3, .wave-4 {
+  height: 7.5rem;
+  width: 100vw; }
+
+.wave-1 {
+  position: absolute;
+  background-image: url("/Public/imgs/wave.png");
+  background-size: 100rem 10rem;
+  animation: animate 30s linear infinite;
+  animation-delay: 0s;
+  z-index: 1000;
+  bottom: 20rem;
+  left: 0; }
+
+.wave-2 {
+  position: absolute;
+  background-image: url("/Public/imgs/wave-light.png");
+  background-size: 100rem 10rem;
+  animation: animate2 15s linear infinite;
+  animation-delay: -5s;
+  z-index: 999;
+  bottom: 20.5rem;
+  left: 0;
+  opacity: 0.8; }
+
+.wave-3 {
+  position: absolute;
+  background-image: url("/Public/imgs/wave-dark.png");
+  background-size: 100rem 10rem;
+  animation: animate3 5s linear infinite;
+  animation-delay: -2s;
+  z-index: 998;
+  bottom: 21rem;
+  left: 0; }
+
 .footer-container {
   position: absolute;
   background-color: #6C63FF;
-  height: 200px;
+  height: 20rem;
   width: 100vw;
   bottom: 0; }
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 6rem; }
+  @media only screen and (max-width: 56.25rem) {
+    .nav {
+      display: block; } }
+  .nav-logo {
+    font-size: 1.8rem; }
+  .nav-links {
+    display: flex; }
+    @media only screen and (max-width: 56.25rem) {
+      .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin: 1rem -6rem;
+        background-color: red;
+        position: relative;
+        z-index: 90rem; } }
+  .nav-link {
+    width: fit-content;
+    padding: 1rem 1rem;
+    margin: 0 4rem;
+    white-space: nowrap;
+    list-style: none;
+    font-size: 1.8rem;
+    cursor: pointer; }
+    @media only screen and (max-width: 56.25rem) {
+      .nav-link:not(:last-child) {
+        margin-bottom: 1rem; } }
+  .nav-toggler {
+    padding: 1rem;
+    display: none;
+    position: absolute;
+    right: 6%;
+    top: 4%;
+    z-index: 100rem;
+    cursor: pointer; }
+    @media only screen and (max-width: 56.25rem) {
+      .nav-toggler {
+        display: flex; } }
+    .nav-toggler-icon, .nav-toggler-icon::before, .nav-toggler-icon::after {
+      position: relative;
+      width: 2.5rem;
+      height: 2px !important;
+      background-color: red;
+      display: inline-block; }
+    .nav-toggler-icon::before, .nav-toggler-icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s; }
+    .nav-toggler-icon::before {
+      top: -0.8rem; }
+    .nav-toggler-icon::after {
+      top: 0.8rem; }
