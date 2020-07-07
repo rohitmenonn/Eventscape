@@ -47,16 +47,19 @@ body {
   text-align: left;
   padding-left: .5rem;
   font-weight: 300;
-  opacity: .8;
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 2rem; }
 
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 3rem 6rem; }
+  padding: 3rem 6rem;
+  padding-bottom: 27.5rem;
+  padding-top: 10rem; }
   .header-image {
-    height: 60rem; }
+    height: 60rem;
+    width: auto; }
 
 .wave-1, .wave-2, .wave-3, .wave-4 {
   height: 7.5rem;
@@ -110,15 +113,18 @@ body {
 
 .nav {
   width: 100%;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 6rem; }
+  padding: 1.5rem 5rem;
+  background-color: #FFF; }
   @media only screen and (max-width: 56.25rem) {
     .nav {
       display: block; } }
   .nav-logo {
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    cursor: pointer; }
   .nav-links {
     display: flex; }
     @media only screen and (max-width: 56.25rem) {
@@ -144,14 +150,14 @@ body {
     .nav-link::after {
       content: "";
       width: 0;
-      height: 2.5px;
+      height: 0.3rem;
       background-color: #6159E6;
       display: inline-block;
       position: absolute;
       bottom: 0;
       left: 50%;
       transform: translate(-50%, -50%);
-      transition: all .4s; }
+      transition: all .3s; }
     .nav-link:hover::after {
       width: 85%; }
     .nav-link a {
@@ -171,21 +177,9 @@ body {
     @media only screen and (max-width: 56.25rem) {
       .nav-toggler {
         display: flex; } }
-    .nav-toggler-icon, .nav-toggler-icon::before, .nav-toggler-icon::after {
-      position: relative;
-      width: 2.5rem;
-      height: 2px !important;
-      background-color: black;
-      display: inline-block; }
-    .nav-toggler-icon::before, .nav-toggler-icon::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      transition: all .2s; }
-    .nav-toggler-icon::before {
-      top: -0.8rem; }
-    .nav-toggler-icon::after {
-      top: 0.8rem; }
+    .nav-toggler-icon img {
+      height: 5rem;
+      width: 5rem; }
 
-.hide {
-  display: none; }
+.scrolled {
+  box-shadow: 0px 0px 5px #000; }

@@ -13,3 +13,12 @@ function myFunction(x) {
   var x = window.matchMedia("(max-width: 56.25rem)")
   myFunction(x) 
   x.addListener(myFunction)
+
+  // NAVBAR SHADOW
+
+  $(function (){
+		$(document).scroll(function(){
+			var $nav = $(".nav");
+			$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+		});
+	});

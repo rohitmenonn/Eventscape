@@ -1,9 +1,11 @@
 .nav{
     width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 6rem;
+    padding: 1.5rem 5rem;
+    background-color: #FFF;
 
     @media only screen and (max-width: 56.25rem){
         display: block;
@@ -11,6 +13,7 @@
 
     &-logo{
         font-size: 1.8rem;
+        cursor: pointer;
     }
 
     &-links{
@@ -43,14 +46,14 @@
         &::after{
             content: "";
             width: 0;
-            height: 2.5px;
+            height: 0.3rem;
             background-color: $color-primary-dark;
             display: inline-block;
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translate(-50%,-50%);
-            transition: all .4s;
+            transition: all .3s;
         }
 
         &:hover::after{
@@ -83,35 +86,41 @@
         }
 
         &-icon{
-            &,
-            &::before,
-            &::after{
-                position: relative;
-                width: 2.5rem;
-                height: 2px !important;
-                background-color: black;
-                display: inline-block;
+
+            img {
+                height: 5rem;
+                width: 5rem;
             }
+            // &,
+            // &::before,
+            // &::after{
+            //     position: relative;
+            //     width: 2.5rem;
+            //     height: 2px !important;
+            //     background-color: black;
+            //     display: inline-block;
+            // }
     
-            &::before,
-            &::after{
-                content: "";
-                position: absolute;
-                left: 0;
-                transition: all .2s;
-            }
+            // &::before,
+            // &::after{
+            //     content: "";
+            //     position: absolute;
+            //     left: 0;
+            //     transition: all .2s;
+            // }
     
-            &::before{
-                top: -0.8rem;
-            }
+            // &::before{
+            //     top: -0.8rem;
+            // }
     
-            &::after{
-                top: 0.8rem;
-            }
+            // &::after{
+            //     top: 0.8rem;
+            // }
         }
     }
 }
 
-.hide {
-    display: none;
+.scrolled {
+    box-shadow: 0px 0px 5px #000;
+    // background-color: $color-primary-lighter;
 }
