@@ -27,6 +27,9 @@ body {
   overflow-x: hidden;
   position: relative; }
 
+::selection {
+  background-color: #bbee78; }
+
 @keyframes animate {
   0% {
     background-position-x: 0px; }
@@ -44,6 +47,14 @@ body {
     background-position-x: 0px; }
   100% {
     background-position-x: -1000px; } }
+
+@keyframes animateArrow {
+  0% {
+    bottom: 0; }
+  50% {
+    bottom: 1rem; }
+  100% {
+    bottom: 0; } }
 
 .heading-main {
   text-align: left;
@@ -71,6 +82,7 @@ body {
 
 .header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 6rem;
@@ -88,6 +100,17 @@ body {
         margin-top: 7rem; } }
   .header-content-section {
     margin-right: 2rem; }
+  .header .down-arrow {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 1rem;
+    animation: animateArrow 1s linear infinite; }
+    .header .down-arrow a {
+      color: rgba(0, 0, 0, 0.8); }
 
 .wave-1, .wave-2, .wave-3, .wave-4 {
   height: 7.5rem;
@@ -146,17 +169,20 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 5rem;
-  background-color: #FFF; }
-  @media only screen and (max-width: 56.25rem) {
+  background-color: #FFF;
+  z-index: 1001; }
+  @media only screen and (max-width: 56.25em) {
     .nav {
       display: block;
-      padding: 3rem 5rem; } }
+      padding: 3rem 5rem;
+      box-shadow: 0px 0px 5px #000; } }
   .nav-logo {
     font-size: 1.8rem;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
   .nav-links {
     display: flex; }
-    @media only screen and (max-width: 56.25rem) {
+    @media only screen and (max-width: 56.25em) {
       .nav-links {
         display: flex;
         flex-direction: column;
@@ -179,7 +205,7 @@ body {
     .nav-link::after {
       content: "";
       width: 0;
-      height: 0.3rem;
+      height: 2.5px;
       background-color: #6159E6;
       display: inline-block;
       position: absolute;
@@ -192,23 +218,37 @@ body {
     .nav-link a {
       text-decoration: none;
       color: #000; }
-    @media only screen and (max-width: 56.25rem) {
+    @media only screen and (max-width: 56.25em) {
       .nav-link:not(:last-child) {
         margin-bottom: 1rem; } }
   .nav-toggler {
     padding: 1rem;
     display: none;
     position: absolute;
-    right: 8%;
-    top: 4%;
-    z-index: 100rem;
+    right: 0;
+    transform: translate(-50%, -30%);
+    z-index: 100;
     cursor: pointer; }
-    @media only screen and (max-width: 56.25rem) {
+    @media only screen and (max-width: 56.25em) {
       .nav-toggler {
-        display: flex; } }
-    .nav-toggler-icon img {
-      height: 5rem;
-      width: 5rem; }
+        display: inline-block; } }
+    .nav-toggler:focus {
+      color: red; }
+    .nav-toggler-icon, .nav-toggler-icon::before, .nav-toggler-icon::after {
+      position: relative;
+      width: 2.5rem;
+      height: 2px !important;
+      background-color: black;
+      display: inline-block; }
+    .nav-toggler-icon::before, .nav-toggler-icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s; }
+    .nav-toggler-icon::before {
+      top: -0.8rem; }
+    .nav-toggler-icon::after {
+      top: 0.8rem; }
 
 .scrolled {
   box-shadow: 0px 0px 5px #000; }

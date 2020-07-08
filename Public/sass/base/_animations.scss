@@ -26,3 +26,15 @@
         background-position-x: -1000px;
     }
 }
+
+@keyframes animateArrow {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 1rem;
+    }
+    100% {
+        bottom: 0;
+    }
+}
