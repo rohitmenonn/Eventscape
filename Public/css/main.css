@@ -15,6 +15,9 @@ html {
   @media only screen and (max-width: 68.5em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 47.5%; } }
 
 body {
   font-family: 'Varela Round', sans-serif;
@@ -28,7 +31,8 @@ body {
   position: relative; }
 
 ::selection {
-  background-color: #bbee78; }
+  background-color: #bbee78;
+  color: rgba(0, 0, 0, 0.5); }
 
 @keyframes animate {
   0% {
@@ -95,6 +99,9 @@ body {
   .header-image {
     height: 58rem;
     width: auto; }
+    @media only screen and (max-width: 62.5em) {
+      .header-image {
+        height: 52rem; } }
     @media only screen and (max-width: 56.25em) {
       .header-image {
         margin-top: 7rem; } }
@@ -176,7 +183,7 @@ body {
       display: block;
       padding: 3rem 5rem;
       box-shadow: 0px 0px 5px #000; } }
-  .nav-logo {
+  .nav-main {
     font-size: 1.8rem;
     cursor: pointer;
     position: relative; }

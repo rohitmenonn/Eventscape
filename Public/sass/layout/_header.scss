@@ -16,6 +16,10 @@
         height: 58rem;
         width: auto;
 
+        @media only screen and (max-width: 62.5em){
+            height: 52rem;
+        }
+
         @media only screen and (max-width: 56.25em){
             margin-top: 7rem;
         }
