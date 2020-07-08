@@ -11,16 +11,47 @@
     <link rel="stylesheet" href="/Public/css/main.css">
 </head>
 <body>
-    <div class="error">404</div>
-    <div class="error-message">Page not found</div>
-    
-    <footer>
-        <div class="wave-1" ></div>
-        <div class="wave-2" ></div>
-        <div class="wave-3" ></div>
-        <div class="footer-container">
-            <div class="made-by"> Made with ❤️ by ABCD</div>
+
+    <div class="scene">
+        <div class="moon"></div>
+
+        <div class="error">
+            <p class="error-text">404</p>
+            <p class="error-message"> Page not found </p>
+            <a href="#"><button> Back to Home Page </button></a>
         </div>
-    </footer>
+
+        <img class="forest" src="/Public/imgs/forest.png" alt="Image could not be loaded">
+    </div>
+
+    <script type="text/javascript">
+
+        function Stars() {
+            let count = 500;
+            let scene = document.querySelector('.scene');
+            let i = 0;
+            while ( i < count ) {
+                let star = document.createElement("i");
+                let x = Math.floor( Math.random() * window.innerWidth );
+                let y = Math.floor( Math.random() * window.innerHeight );
+                let duration = Math.random() * 10;
+                let size = Math.random() * 2;
+
+                star.style.left = x + 'px';
+                star.style.top = y + 'px';
+                star.style.width = 1 + size + 'px';
+                star.style.height = 1 + size + 'px';
+
+                star.style.animationDuration = 5 + duration + 's';
+                star.style.animationDelay = duration + 's';
+
+                scene.appendChild(star);
+                i++;
+            }
+        }
+
+        Stars();
+
+    </script>
 </body>
 </html>
