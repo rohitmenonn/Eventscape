@@ -6,6 +6,15 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 40%; } }
+  @media only screen and (max-width: 68.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Varela Round', sans-serif;
@@ -41,14 +50,20 @@ body {
   font-size: 8rem;
   color: #9892FF;
   letter-spacing: 2px; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-main {
+      padding: 0 11vw; } }
 
 .heading-sub {
   font-size: 2rem;
   text-align: left;
-  padding-left: .5rem;
+  margin-left: .6rem;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.8);
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-sub {
+      padding: 0 11vw; } }
 
 .bolded {
   font-weight: 700;
@@ -56,13 +71,23 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 3rem 6rem;
   padding-top: 10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 15rem; } }
   .header-image {
-    height: 60rem;
+    height: 58rem;
     width: auto; }
+    @media only screen and (max-width: 56.25em) {
+      .header-image {
+        margin-top: 7rem; } }
+  .header-content-section {
+    margin-right: 2rem; }
 
 .wave-1, .wave-2, .wave-3, .wave-4 {
   height: 7.5rem;
@@ -120,11 +145,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 5rem;
+  padding: 2rem 5rem;
   background-color: #FFF; }
   @media only screen and (max-width: 56.25rem) {
     .nav {
-      display: block; } }
+      display: block;
+      padding: 3rem 5rem; } }
   .nav-logo {
     font-size: 1.8rem;
     cursor: pointer; }
