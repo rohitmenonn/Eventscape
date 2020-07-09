@@ -12,6 +12,9 @@
     <!-- FONT AWESOME -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- SHORTCUT ICON -->
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <!-- NAVBAR -->
@@ -35,18 +38,27 @@
     </nav>
 
     <!-- LOGIN FORM -->
+    <div class="form-login">
+        <!-- <h3 class="heading-form">Login</h3> -->
+        <form action="#" class="form">
+            <div class="form-group">
+                <input type="text" id="username" class="form-input" placeholder="Username" required>
+                <label for="username" class="form-label">Username</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" class="form-input" placeholder="Password">
+                <label for="password" class="form-label">Password</label>
+            </div>
+            <div class="form-options">
+                <button class="btn-submit">Login</button>
+            </div>
+        </form>
+        <div class="form-options">
+            <p>Not a member? <a href="#">Sign up</a></p>
+        </div>
+    </div>
 
-    <form action="" method="">
-        <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" class="form-input">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" class="form-input">
-        </div>
-    </form>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../Public/js/main.js"></script>
 </body>

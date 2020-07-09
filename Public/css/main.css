@@ -396,6 +396,67 @@ body {
   .dropdown:active {
     outline: none; }
 
+.form-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 40vh;
+  padding: 4rem 0; }
+
+.form-group {
+  padding: 0 15%; }
+  .form-group:not(:last-child) {
+    margin-bottom: 1.5rem; }
+
+.form-label {
+  font-size: 2rem; }
+
+.form-options {
+  text-align: center;
+  font-size: 1.5rem; }
+  .form-options:not(:first-child) {
+    margin-top: 1.5rem; }
+  .form-options a {
+    text-decoration: none;
+    color: #6C63FF; }
+
+.form-input {
+  color: black;
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: #F3F3F4;
+  border: none;
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s; }
+  .form-input::placeholder {
+    color: black; }
+  .form-input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #6C63FF; }
+  .form-input:focus:invalid {
+    border-bottom: 2px solid red; }
+  .form-input::-webkit-input-placeholder {
+    color: black; }
+
+.form-label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  display: block;
+  transition: all 0.3s; }
+
+.form-input:placeholder-shown + .form-label {
+  opacity: 0;
+  visibility: hidden; }
+
 .event-options {
   margin-top: 10rem;
   width: 100vw;
