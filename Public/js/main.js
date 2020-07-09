@@ -1,3 +1,13 @@
+// AOD INIT
+
+(function ($) {
+  "use strict";
+
+  // AOS Init
+  AOS.init();
+
+})(jQuery);
+
 $('.nav-toggler').on('click', (e) => {
     e.preventDefault()
     $('.nav-links').slideToggle();
@@ -8,26 +18,27 @@ function myFunction(x) {
     {
       $('.nav-links').show();
     }
-  }
+}
   
-  var x = window.matchMedia("(max-width: 56.25rem)")
-  myFunction(x) 
-  x.addListener(myFunction)
+var x = window.matchMedia("(max-width: 56.25rem)")
+myFunction(x) 
+x.addListener(myFunction)
 
-  // NAVBAR SHADOW
+// NAVBAR SHADOW
 
-  $(function (){
-		$(document).scroll(function(){
-			var $nav = $(".nav");
-			$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-		});
-  });
+$(function (){
+	$(document).scroll(function(){
+		var $nav = $(".nav");
+		$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+	});
+});
   
-  // FILTER SHOW 
+// FILTER SHOW 
 
-  $('.filter-options').hide();
+$('.filter-options').hide();
+$('.filter').on('click', (e) => {
+  e.preventDefault();
+  $('.filter-options').slideToggle();   
+})
 
-  $('.filter').on('click', (e) => {
-    e.preventDefault();
-    $('.filter-options').slideToggle();    
-  })
+ 
