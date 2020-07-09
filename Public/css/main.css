@@ -193,7 +193,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .nav {
       display: block;
-      padding: 3rem 5rem; } }
+      padding: 4rem 5rem 2rem 5rem; } }
   .nav-main {
     font-size: 1.8rem;
     cursor: pointer;
@@ -202,12 +202,13 @@ body {
     display: flex; }
     @media only screen and (max-width: 56.25em) {
       .nav-links {
+        padding: 2rem 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100vw;
-        margin: 1rem -6rem;
+        margin: 1rem -7rem;
         background-color: #fff;
         position: relative;
         z-index: 90rem;
@@ -238,7 +239,7 @@ body {
       text-decoration: none;
       color: #000; }
     @media only screen and (max-width: 56.25em) {
-      .nav-link {
+      .nav-link:not(:last-child) {
         margin-bottom: 3rem; } }
   .nav-toggler {
     padding: 1rem;
