@@ -32,7 +32,7 @@ $(function (){
 		$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
 	});
 });
-  
+
 // FILTER SHOW 
 
 $('.filter-options').hide();

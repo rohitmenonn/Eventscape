@@ -34,15 +34,6 @@ body {
   background-color: #bbee78;
   color: rgba(0, 0, 0, 0.5); }
 
-.translate-left {
-  transform: translateX(-100%); }
-
-.translate-left-half {
-  transform: translateX(-65%); }
-
-.translate-right {
-  transform: translateX(100%); }
-
 .hide {
   display: none; }
 
@@ -105,11 +96,17 @@ body {
       padding: 0 11vw; } }
 
 .heading-form {
-  margin-left: 9rem;
+  margin-left: 15%;
   margin-bottom: 1.5rem;
   font-size: 4rem;
   font-weight: bold;
   color: #6C63FF; }
+  @media only screen and (max-width: 50em) {
+    .heading-form {
+      margin-left: 10%; } }
+  @media only screen and (max-width: 46.8em) {
+    .heading-form {
+      margin-left: 0; } }
 
 .bolded {
   font-weight: 700;
@@ -212,7 +209,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .nav {
       display: block;
-      padding: 4rem 5rem 2rem 5rem; } }
+      padding: 4rem 5rem 0 5rem; } }
   .nav-main {
     font-size: 1.8rem;
     cursor: pointer;
@@ -228,6 +225,7 @@ body {
         align-items: center;
         width: 100vw;
         margin: 1rem -7rem;
+        margin-bottom: 0;
         background-color: #fff;
         position: relative;
         z-index: 90rem;
@@ -419,15 +417,25 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  padding: 0 3rem;
   padding-top: 12rem;
   height: fit-content;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 0; }
+  @media only screen and (max-width: 68.75em) {
+    .main-forms {
+      padding-top: 18rem; } }
+  @media only screen and (max-width: 43.75em) {
+    .main-forms {
+      justify-content: center;
+      align-items: center;
+      padding-top: 15rem; } }
 
 .form-login, .form-signup {
   width: 40vw;
   height: 40vh;
   padding: 4rem 0;
-  margin-top: 6rem; }
+  margin-top: 5%; }
 
 .form-signup {
   padding: 0 0;
@@ -437,6 +445,12 @@ body {
   padding: 0 15%; }
   .form-group:not(:last-child) {
     margin-bottom: 1.5rem; }
+  @media only screen and (max-width: 50em) {
+    .form-group {
+      padding: 0 10%; } }
+  @media only screen and (max-width: 46.8em) {
+    .form-group {
+      padding: 0; } }
 
 .form-label {
   font-size: 2rem; }
@@ -506,6 +520,15 @@ body {
 .form-img img {
   height: 50rem;
   width: auto; }
+  @media only screen and (max-width: 50em) {
+    .form-img img {
+      height: 47.5rem; } }
+  @media only screen and (max-width: 46.8em) {
+    .form-img img {
+      height: 45rem; } }
+  @media only screen and (max-width: 43.75em) {
+    .form-img img {
+      display: none; } }
 
 .event-options {
   margin-top: 10rem;

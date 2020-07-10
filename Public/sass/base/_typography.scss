@@ -27,11 +27,19 @@
     }
 
     &-form {
-        margin-left: 9rem;
+        margin-left: 15%;
         margin-bottom: 1.5rem;
         font-size: 4rem;
         font-weight: bold;
         color: $color-primary;
+
+        @media only screen and (max-width: 50em){
+            margin-left: 10%;
+        }
+
+        @media only screen and (max-width: 46.8em){
+            margin-left: 0;
+        }
     }
 }
 
