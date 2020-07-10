@@ -41,4 +41,15 @@ $('.filter').on('click', (e) => {
   $('.filter-options').slideToggle();   
 })
 
- 
+
+// LOGIN PAGE
+$('.sign-up').on('click', function(e) {
+  e.preventDefault();
+  $('.form-login').addClass('hide');
+  $('.form-signup').removeClass('hide');
+})
+$('.login').on('click', function(e) {
+  e.preventDefault();
+  $('.form-signup').addClass('hide');
+  $('.form-login').removeClass('hide');
+})

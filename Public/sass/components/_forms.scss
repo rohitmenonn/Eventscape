@@ -1,10 +1,24 @@
+.main-forms {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 12rem;
+    height: fit-content;
+    width: 100%;
+}
+
 .form{
 
-    &-login{
-        @include centralize;
+    &-login, &-signup{
         width: 40vw;
         height: 40vh;
         padding: 4rem 0;
+        margin-top: 6rem;
+    }
+
+    &-signup {
+        padding: 0 0;
+        margin-top: 0rem;
     }
 
     &-group{
@@ -34,11 +48,11 @@
     }
 
     &-input{
-        color: black;
+        color: #000;
         font-family: inherit;
         font-size: 1.5rem;
         padding: 1.5rem 2rem;
-        border-radius: 2px;
+        border-radius: 3px;
         background-color: #F3F3F4;
         border: none;
         width: 100%;
@@ -47,7 +61,7 @@
         transition: all 0.3s;
 
         &::placeholder{
-            color: black;
+            color: rgba(0, 0, 0, .6);
         }
 
         &:focus{
@@ -61,7 +75,7 @@
         }
 
         &::-webkit-input-placeholder{
-            color: black;
+            color: rgba(0, 0, 0, .6);
         }
     }
 
@@ -72,10 +86,55 @@
         margin-top: 1rem;
         display: block;
         transition: all 0.3s;
+        color: rgba(0, 0, 0, .6);
     }
 
     &-input:placeholder-shown + &-label{
         opacity: 0;
         visibility: hidden;
     }
+
+    .sign-up, .login {
+        color: $color-primary;
+        cursor: pointer;
+    }
+
+    .btn-form {
+
+        padding: 1rem 5rem;
+        background-color: $color-primary-light;
+        border: none;
+        border-radius: 3px;
+        color: #FFF;
+        outline: none;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+
+    // @media only screen and (max-width: 62.5em) {
+    //     .form-img {
+    //         padding-top: 5rem;
+    //     }
+
+    //     &-login {
+    //         margin-top: 10rem;
+    //     }
+
+    // }
 }
+
+.form-img {
+
+    img {
+        height: 50rem;
+        width: auto;
+    }
+}
+
+
+
