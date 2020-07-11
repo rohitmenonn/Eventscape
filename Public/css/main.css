@@ -415,6 +415,9 @@ body {
   /* hide default arrow in chrome OSX */ }
   .dropdown-label {
     font-size: 1.8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .dropdown-label {
+        font-size: 1.4rem; } }
   .dropdown:active {
     outline: none; }
 
@@ -600,6 +603,16 @@ body {
     padding-right: 20rem;
     padding-top: 1rem;
     padding-bottom: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .event-options .type-holder {
+        padding-left: 5rem;
+        padding-right: 5rem; } }
+    @media only screen and (max-width: 40.625em) {
+      .event-options .type-holder {
+        padding: 0 0.5em; } }
+    @media only screen and (max-width: 37.5em) {
+      .event-options .type-holder {
+        font-size: 1.5rem; } }
     .event-options .type-holder ul {
       display: flex;
       align-items: center;
@@ -621,3 +634,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  .filter-options .tag {
+    width: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .filter-options {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 40.625em) {
+    .filter-options {
+      padding: 0 0.5em; } }
