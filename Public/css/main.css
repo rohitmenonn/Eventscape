@@ -214,6 +214,9 @@ body {
     font-size: 1.8rem;
     cursor: pointer;
     position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .nav-main {
+        padding-bottom: 2rem; } }
   .nav-links {
     display: flex; }
     @media only screen and (max-width: 56.25em) {
@@ -302,13 +305,15 @@ body {
   #events .col {
     margin: 4rem 2rem; }
     #events .col .card {
-      background-color: #ddf8f5;
+      border: 1px solid rgba(0, 0, 0, 0.1);
       width: 100%;
       height: 40rem;
       border-radius: 1rem;
-      transition: 0.1s linear; }
+      transition: 0.1s linear;
+      overflow: hidden; }
     #events .col .card:hover {
-      transform: scale(1.08); }
+      transform: scale(1.08);
+      box-shadow: 3px 5px 5px rgba(20, 20, 20, 0.1); }
   @media only screen and (max-width: 56.25em) {
     #events {
       grid-template-columns: 1fr 1fr;
@@ -529,6 +534,57 @@ body {
   @media only screen and (max-width: 43.75em) {
     .form-img img {
       display: none; } }
+
+.card {
+  position: relative; }
+  .card-container {
+    padding: 1rem 2.5rem;
+    text-align: left; }
+  .card-img-container {
+    width: 100%;
+    height: 60%; }
+  .card-tag-container {
+    border: 2px solid #9892FF;
+    color: #9892FF;
+    width: fit-content;
+    padding: .3rem .8rem;
+    border-radius: 10rem;
+    font-size: 1.2rem; }
+  .card-date-container {
+    padding: 1rem;
+    font-size: 1.2rem; }
+  .card-img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; }
+  .card-heading {
+    font-size: 2rem;
+    font-weight: bolder; }
+  .card-btn-container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center; }
+  .card-btn {
+    display: inline-block;
+    background-color: #9892FF;
+    border: none;
+    outline: none;
+    width: 50%;
+    padding: 1.2rem 0;
+    transition: all .2s;
+    cursor: pointer; }
+    .card-btn:hover {
+      background-color: #6C63FF; }
+    .card-btn a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.8rem;
+      font-family: inherit;
+      letter-spacing: .5px; }
 
 .event-options {
   margin-top: 10rem;
