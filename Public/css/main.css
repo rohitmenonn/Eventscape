@@ -37,6 +37,15 @@ body {
 .hide {
   display: none; }
 
+.form-fix {
+  margin-bottom: 1.5rem; }
+
+.margin-y-m {
+  margin: 2rem 0; }
+
+.margin-bottom-m {
+  margin-bottom: 3rem; }
+
 @keyframes animate {
   0% {
     background-position-x: 0px; }
@@ -452,7 +461,7 @@ input::-webkit-inner-spin-button {
 
 .form-event {
   height: fit-content;
-  padding-top: 0;
+  padding: 0;
   margin-top: 0; }
 
 .form-signup {
@@ -461,8 +470,8 @@ input::-webkit-inner-spin-button {
 
 .form-group {
   padding: 0 15%; }
-  .form-group:not(:last-child) {
-    margin-bottom: 1.5rem; }
+  .form-group select:first-child {
+    margin-left: -.2rem; }
   @media only screen and (max-width: 50em) {
     .form-group {
       padding: 0 10%; } }

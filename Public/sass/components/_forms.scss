@@ -36,7 +36,7 @@ input::-webkit-inner-spin-button {
 
     &-event{
         height: fit-content;
-        padding-top: 0;
+        padding: 0;
         margin-top: 0;
     }
 
@@ -48,8 +48,10 @@ input::-webkit-inner-spin-button {
     &-group{
         padding: 0 15%;
 
-        &:not(:last-child){
-            margin-bottom: 1.5rem;
+        select{
+            &:first-child{
+                margin-left: -.2rem;
+            }
         }
 
         @media only screen and (max-width: 50em){
