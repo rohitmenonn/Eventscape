@@ -40,9 +40,9 @@
 
     <!-- LOGIN FORM -->
     
-    <section class="main-forms">
+    <section class="main-forms create-forms">
 
-        <div class="form-img" style="padding-top: 3rem;">
+        <div class="img-create">
             <img src="/Public/imgs/forms.svg" alt="Could not load the image">
         </div>
 
@@ -57,31 +57,15 @@
                     <input type="text" id="event-venue" class="form-input" placeholder="Venue" required autocomplete="off">
                     <label for="event-venue" class="form-label">Venue</label>
                 </div>
+                <div class="form-group form-fix">
+                    <input type="number" name="event-price" class="form-input" placeholder="Price" required autocomplete="off">
+                    <label for="event-venue" class="form-label">Price</label>
+                </div>
                 <div class="form-group form-fix margin-bottom-m">
-                    <input type="number" id="event-price" class="form-input" placeholder="Price" required autocomplete="off">
+                    <input type="date" id="event-date" name="event-date" class="form-input" required>
                 </div>
                 <div class="form-group form-fix">
-                    <select class="ui fluid search dropdown" name="event-month">
-                        <option value="">Month</option>
-                        <option value="1">January</option>
-                        <option value="2">February</option>
-                        <option value="3">March</option>
-                        <option value="4">April</option>
-                        <option value="5">May</option>
-                        <option value="6">June</option>
-                        <option value="7">July</option>
-                        <option value="8">August</option>
-                        <option value="9">September</option>
-                        <option value="10">October</option>
-                        <option value="11">November</option>
-                        <option value="12">December</option>
-                    </select>
-                    <select class="ui fluid search dropdown" name="event-year">
-                        <option value="">Year</option>
-                        <option value="1">2021</option>
-                        <option value="2">2022</option>
-                        <option value="2">2020</option>
-                    </select>
+                    <input type="time" name="event-time" id="event-time" class="form-input">
                 </div>
                 <div class="form-group form-fix margin-y-m">
                     <input type="file" id="real-file" hidden="hidden" />
@@ -103,6 +87,15 @@
         
 
     </section>
+
+    <footer class="footer">
+        <div class="wave-1" ></div>
+        <div class="wave-2" ></div>
+        <div class="wave-3" ></div>
+        <div class="footer-container">
+            <div class="made-by"> Made with ❤️ by ABCD</div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

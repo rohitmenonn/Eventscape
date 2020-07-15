@@ -3,10 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    resize: none;
 }
+
 html{
     font-size: 62.5%; // 10px default
     scroll-behavior: smooth;
+    position: relative;
 
     @media only screen and (max-width: 75em){
         font-size: 56.25%;
@@ -41,6 +44,13 @@ body{
     position: relative;
 }
 
+::-webkit-scrollbar{
+    width: .8rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #6C63FF;
+}
 ::selection {
     background-color: #bbee78;
     color: rgba($color: #000000, $alpha: 0.5);

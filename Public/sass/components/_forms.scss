@@ -13,6 +13,7 @@ input::-webkit-inner-spin-button {
     height: fit-content;
     width: 100%;
     margin-bottom: 0;
+    padding-bottom: 40rem;
 
     @media only screen and (max-width: 68.75em) {
         padding-top: 18rem;
@@ -22,6 +23,13 @@ input::-webkit-inner-spin-button {
         justify-content: center;
         align-items: center;
         padding-top: 15rem;
+    }
+}
+
+.create-forms{
+
+    @media only screen and (max-width: 68.75em) {
+        padding-top: 12rem;
     }
 }
 
@@ -37,6 +45,7 @@ input::-webkit-inner-spin-button {
     &-event{
         height: fit-content;
         padding: 0;
+        padding-bottom: 3rem;
         margin-top: 0;
     }
 
@@ -134,7 +143,7 @@ input::-webkit-inner-spin-button {
     }
 
     .btn-form {
-
+        font-family: inherit;
         padding: 1rem 5rem;
         background-color: $color-primary-light;
         border: none;
@@ -148,6 +157,10 @@ input::-webkit-inner-spin-button {
         &:hover {
             background-color: $color-primary;
         }
+    }
+
+    #event-date, #event-time{
+        color: rgba(0, 0, 0, .6) !important;
     }
 
     // @media only screen and (max-width: 62.5em) {
@@ -203,8 +216,32 @@ input::-webkit-inner-spin-button {
         @media only screen and (max-width: 43.75em){
             display: none;
         }
+
     }
+
 }
 
+.img-create{
+    text-align: center;
+
+    img{
+        width: 95%;
+        display: inline-block;
+    }
+
+    @media only screen and (max-width: 71.875em){
+        width: 85%;
+        height: auto;
+    }
+
+    @media only screen and (max-width: 62.5em){
+        width: 60%;
+    }
+
+    @media only screen and (max-width: 56.25em){
+        display: none;
+    }
+
+}
 
 

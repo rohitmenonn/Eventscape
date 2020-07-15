@@ -1,11 +1,13 @@
 *, *::after, *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  resize: none; }
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  position: relative; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -29,6 +31,12 @@ body {
   width: 100%;
   overflow-x: hidden;
   position: relative; }
+
+::-webkit-scrollbar {
+  width: .8rem; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #6C63FF; }
 
 ::selection {
   background-color: #bbee78;
@@ -106,7 +114,7 @@ body {
 
 .heading-form {
   margin-left: 15%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   font-size: 4rem;
   font-weight: bold;
   color: #6C63FF; }
@@ -443,7 +451,8 @@ input::-webkit-inner-spin-button {
   padding-top: 12rem;
   height: fit-content;
   width: 100%;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-bottom: 40rem; }
   @media only screen and (max-width: 68.75em) {
     .main-forms {
       padding-top: 18rem; } }
@@ -452,6 +461,10 @@ input::-webkit-inner-spin-button {
       justify-content: center;
       align-items: center;
       padding-top: 15rem; } }
+
+@media only screen and (max-width: 68.75em) {
+  .create-forms {
+    padding-top: 12rem; } }
 
 .form-login, .form-signup, .form-event {
   width: 40vw;
@@ -462,6 +475,7 @@ input::-webkit-inner-spin-button {
 .form-event {
   height: fit-content;
   padding: 0;
+  padding-bottom: 3rem;
   margin-top: 0; }
 
 .form-signup {
@@ -532,6 +546,7 @@ input::-webkit-inner-spin-button {
   cursor: pointer; }
 
 .form .btn-form {
+  font-family: inherit;
   padding: 1rem 5rem;
   background-color: #9892FF;
   border: none;
@@ -543,6 +558,9 @@ input::-webkit-inner-spin-button {
   transition: all 0.2s linear; }
   .form .btn-form:hover {
     background-color: #6C63FF; }
+
+.form #event-date, .form #event-time {
+  color: rgba(0, 0, 0, 0.6) !important; }
 
 #custom-button {
   border: none;
@@ -574,6 +592,22 @@ input::-webkit-inner-spin-button {
       height: 45rem; } }
   @media only screen and (max-width: 43.75em) {
     .form-img img {
+      display: none; } }
+
+.img-create {
+  text-align: center; }
+  .img-create img {
+    width: 95%;
+    display: inline-block; }
+  @media only screen and (max-width: 71.875em) {
+    .img-create {
+      width: 85%;
+      height: auto; } }
+  @media only screen and (max-width: 62.5em) {
+    .img-create {
+      width: 60%; } }
+  @media only screen and (max-width: 56.25em) {
+    .img-create {
       display: none; } }
 
 .card {
