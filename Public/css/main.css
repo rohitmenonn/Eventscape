@@ -162,7 +162,7 @@ body {
     padding: 1rem;
     animation: animateArrow 1s linear infinite; }
     .header .down-arrow a {
-      color: rgba(0, 0, 0, 0.8); }
+      color: rgba(108, 99, 255, 0.4); }
 
 .wave-1, .wave-2, .wave-3, .wave-4 {
   height: 7.5rem;
@@ -617,10 +617,10 @@ input::-webkit-inner-spin-button {
     text-align: left; }
   .card-img-container {
     width: 100%;
-    height: 60%; }
+    height: 65%; }
   .card-tag-container {
-    border: 2px solid #9892FF;
-    color: #9892FF;
+    border: 2px solid #6C63FF;
+    color: #6C63FF;
     width: fit-content;
     padding: .3rem .8rem;
     border-radius: 10rem;
@@ -662,7 +662,7 @@ input::-webkit-inner-spin-button {
       letter-spacing: .5px; }
 
 .event-options {
-  margin-top: 10rem;
+  margin-top: 5rem;
   width: 100vw;
   height: fit-content;
   padding-bottom: 6rem;
@@ -714,3 +714,18 @@ input::-webkit-inner-spin-button {
   @media only screen and (max-width: 40.625em) {
     .filter-options {
       padding: 0 0.5em; } }
+
+.intro {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  margin-top: 2rem; }
+  .intro-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    padding: 1.5vh 4vw;
+    color: #6C63FF;
+    white-space: nowrap; }
